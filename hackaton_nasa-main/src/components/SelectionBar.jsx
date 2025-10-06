@@ -9,7 +9,7 @@ const SelectionBar = (props) => {
     useEffect(() => {
         const fetchBairros = async () => {
             try {
-                const response = await fetch(`${API_BASE_URL}/api/bairros/summary`);
+                const response = await fetch(`/api/bairros/summary`);
                 const data = await response.json();
                 setBairros(data);
             } catch (error) {
